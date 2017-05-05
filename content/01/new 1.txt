@@ -1,0 +1,15 @@
+//js中的日期时间函数
+var date = new Date();
+date.getYear();        //获取年份(2位)
+date.getFullYear();    //获取完整的年份(4位,1970-)
+date.getMonth();       //获取月份(0-11,0代表1月，所以在显示当前时间的时候需要date.getMonth() + 1）
+date.getDate();        //获取日(1-31)
+date.getDay();         //获取星期?(0-6,0代表星期天)
+date.getTime();        //获取时间(从1970.1.1开始的毫秒数)
+date.getHours();       //获取小时数(0-23)
+date.getMinutes();     //获取分钟数(0-59)
+date.getSeconds();     //获取秒数(0-59)
+date.getMilliseconds();    //获取毫秒数(0-999)
+date.toLocaleDateString();     //获取日期
+var time=date.toLocaleTimeString();     //获取时间
+date.toLocaleString();        //获取日期与时间
